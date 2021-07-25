@@ -1,10 +1,10 @@
 # Spring Framework总览
 
 <!-- GFM-TOC -->
-* [Spring Framework总览](#Spring-Framework总览)
-  * [1.Spring特性总览](#1.Spring特性总览)
-  * [2.Spring版本](#2.Spring版本)
-  * [3.Spring模块化设计](#3.Spring模块化设计)
+- [Spring Framework总览](#Spring-Framework总览)
+  - [1.Spring特性总览](#1.Spring特性总览)
+  - [2.Spring版本](#2.Spring版本)
+  -  [3.Spring模块化设计](#3.Spring模块化设计)
   * [4.Spring对Java语言特性运用](#4.Spring对Java语言特性运用)
   * [5.Spring对JDK的API实践](#5.Spring对JDK的API实践)
   * [6.Spring对JavaEE的API整合](#6.Spring对JavaEE的API整合)

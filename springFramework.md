@@ -64,24 +64,43 @@ web技术特性(Web)
 Spring是按照不同模块进行设计的，其中包括但不限于有以下模块：
 
 • spring-aop
+
 • spring-aspects
+
 • spring-context-indexer
+
 • spring-context-support
+
 • spring-context
+
 • spring-core
+
 • spring-expression
+
 • spring-instrument
+
 • spring-jcl
+
 • spring-jdbc
+
 • spring-jms
+
 • spring-messaging
+
 • spring-orm
+
 • spring-oxm
+
 • spring-test
+
 • spring-tx
+
 • spring-web
+
 • spring-webflux
+
 • spring-webmvc
+
 • spring-websocket
 
 
@@ -210,5 +229,5 @@ Spring @Enable*
 
 最后用张图来说明Spring的核心特性
 
-<div align="center"> <img src="https://github.com/binbinshan/thinking-in-spring/master/images/Spring%20%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7.png" width="1200px"> </div><br>
+<div align="center"> <img src="https://github.com/binbinshan/thinking-in-spring/blob/master/images/Spring%20%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7.png" width="1200px"> </div><br>
 

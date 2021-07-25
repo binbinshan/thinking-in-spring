@@ -9,12 +9,14 @@
   - [5.Spring对JDK的API实践](#5spring对jdk的api实践)
   - [6.Spring对JavaEE的API整合](#6spring对javaee的api整合)
   - [7.Spring编程模型](#7spring编程模型)
-        - [面向对象编程](#面向对象编程)
-        - [面向切面编程](#面向切面编程)
-        - [面向元编程](#面向元编程)
-        - [函数驱动](#函数驱动)
-        - [模块驱动](#模块驱动)
+    - [7.1面向对象编程](#71面向对象编程)
+    - [7.2面向切面编程](#72面向切面编程)
+    - [7.3面向元编程](#73面向元编程)
+    - [7.4函数驱动](#74函数驱动)
+    - [7.5模块驱动](#75模块驱动)
   - [8.Spring设计模式](#8spring设计模式)
+  - [9.相关面试题](#9相关面试题)
+  
 
 <!-- GFM-TOC -->
 
@@ -172,7 +174,7 @@ Java EE Bean 技术相关
 
 Spring中的编程模型有5种：
 
-##### 面向对象编程
+### 7.1面向对象编程
 
 契约接口：Aware、BeanPostProcessor ...
 
@@ -181,13 +183,13 @@ Spring中的编程模型有5种：
 对象继承：Abstract* 类
 
 
-##### 面向切面编程
+### 7.2面向切面编程
 
 动态代理：JdkDynamicAopProxy
 
 字节码提升：ASM、CGLib、AspectJ...
 
-##### 面向元编程
+### 7.3面向元编程
 
 注解：模式注解（@Component、@Service、@Respository ...）
 
@@ -196,14 +198,14 @@ Spring中的编程模型有5种：
 泛型：GenericTypeResolver、ResolvableType ...
 
 
-##### 函数驱动
+### 7.4函数驱动
 
 函数接口：ApplicationEventPublisher
 
 Reactive：Spring WebFlux
 
 
-##### 模块驱动
+### 7.5模块驱动
 
 Maven Artifacts
 
@@ -237,3 +239,7 @@ Spring @Enable*
 
 <div align="center"> <img src="https://github.com/binbinshan/thinking-in-spring/blob/master/images/Spring%20%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7.png" width="1200px"> </div><br>
 
+
+
+
+## 9.相关面试题

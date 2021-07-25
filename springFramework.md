@@ -243,3 +243,21 @@ Spring @Enable*
 
 
 ## 9.相关面试题
+
+什么是 Spring Framework？
+
+Spring使得创建JavaEE应用程序变的简单，它是为了解决企业应用开发的复杂性而创建的。并根据应用程序的需要灵活地创建多种体系结构。如IOC、AOP等
+
+
+
+Spring Framework 有哪些核心模块？
+
+* spring-core：Spring 基础 API 模块，如资源管理，泛型处理 
+
+* spring-beans：Spring Bean 相关，如依赖查找，依赖注入 
+
+* spring-aop : Spring AOP 处理，如动态代理，AOP 字节码提升 
+
+* spring-context : 事件驱动、注解驱动，模块驱动等 
+
+* spring-expression：Spring 表达式语言模块

@@ -2,14 +2,14 @@
 
 <!-- GFM-TOC -->
 * [Spring Framework总览](#Spring-Framework总览)
-  * [1. Spring 特性总览](#1.Spring特性总览)
-  * [2. Spring 版本](#2.Spring版本)
-  * [3. Spring 模块化设计](#3.Spring模块化设计)
-  * [4. Spring 对 Java 语言特性运用](#4.Spring对Java语言特性运用)
-  * [5. Spring 对 JDK API 实践](#5.Spring对JDK的API实践)
-  * [6. Spring 对 Java EE API 整合](#6.Spring对JavaEE的API整合)
-  * [7. Spring 编程模型](#7.Spring编程模型)
-  * [8. Spring 核心价值](#8.Spring设计模式)
+  * [1.Spring特性总览](#1.Spring特性总览)
+  * [2.Spring版本](#2.Spring版本)
+  * [3.Spring模块化设计](#3.Spring模块化设计)
+  * [4.Spring对Java语言特性运用](#4.Spring对Java语言特性运用)
+  * [5.Spring对JDK的API实践](#5.Spring对JDK的API实践)
+  * [6.Spring对JavaEE的API整合](#6.Spring对JavaEE的API整合)
+  * [7.Spring编程模型](#7.Spring编程模型)
+  * [8.Spring核心价值](#8.Spring设计模式)
 <!-- GFM-TOC -->
 
 > 工具版本：

@@ -108,7 +108,7 @@ Spring IOC依赖查找有以下几种方式：
     ```
     <bean id="super" class="com.spring.ioc.domain.SuperUser" parent="user" primary="true">
         <property name="address" value="beijing"/>
-</bean>
+    </bean>
     ```
 
 1. 根据Java注解查找
@@ -167,7 +167,7 @@ Spring IOC依赖注入有以下几种方式：
     ```java
     UserRepository userRepository = beanFactory.getBean(UserRepository.class);
     User user = userRepository.getUser();
-System.out.println(user);
+    System.out.println(user);
 
     
     输出 ：
@@ -292,7 +292,7 @@ System.out.println(user);
     
     输出 ：
     org.springframework.beans.factory.support.DefaultListableBeanFactory@5f2050f6: defining beans [user,userRepository]; root of factory hierarchy
-org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider@a7e666
+    org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider@a7e666
     ```
 
     为什么说beanFactory 和 objectFactory 不是bean呢？
@@ -373,7 +373,7 @@ Spring IOC中的配置，一般分为三类：
     UserRepository userRepository = applicationContext.getBean(UserRepository.class);
     System.out.println(userRepository.getBeanFactory() == applicationContext);
 
-输出：false
+    输出: false
 ```
 结果还是false，并且对象的类型可以是ApplicationContext和BeanFactory，说明ClassPathXmlApplicationContext是继承BeanFactory。
 
@@ -387,7 +387,7 @@ Spring IOC中的配置，一般分为三类：
 * AbstractRefreshableConfigApplicationContext 继承 AbstractRefreshableApplicationContext
 
 AbstractRefreshableApplicationContext中有一个抽象方法实现**getBeanFactory**()，
-获取的是**DefaultListableBeanFactory**这个对象。这样也是为什么打印userRepository.getBeanFactory()对象，输出的结果是org.springframework.beans.factory.support.DefaultListableBeanFactory
+获取的是**DefaultListableBeanFactory**这个对象。这样也是为什么打印userRepository.getBeanFactory()对象，输出的结果是DefaultListableBeanFactory
 
 DefaultListableBeanFactory 这个对象是以一个组合的方式在AbstractRefreshableApplicationContext 中，类似与代理的方式，ClassPathXmlApplicationContext进行getBean的时候，就是使用BeanFactory.getBean进行获取的。
 

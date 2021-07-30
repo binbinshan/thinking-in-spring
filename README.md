@@ -4,9 +4,11 @@
 
 ### 1. [Spring Framework总览](springFramework.md)
 
-Spring IOC
+### 2. [再次理解IOC](understandAgainIoc.md)
 
-Spring Bean
+### 3. [Spring IoC 容器概述](understandAgainIoc.md)
+
+Spring Bean 基础
 
 Spring 依赖查找
 

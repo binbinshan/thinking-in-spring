@@ -6,7 +6,7 @@
 
 ### 2. [再次理解IOC](understandAgainIoc.md)
 
-### 3. [Spring IoC 容器概述](understandAgainIoc.md)
+### 3. [Spring IoC 容器概述](SpringIOCIntroduction.md)
 
 Spring Bean 基础
 

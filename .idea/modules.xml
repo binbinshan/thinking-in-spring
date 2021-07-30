@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lessons/ioc/ioc.iml" filepath="$PROJECT_DIR$/lessons/ioc/ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lessons/ioc-container-overview/ioc-container-overview.iml" filepath="$PROJECT_DIR$/lessons/ioc-container-overview/ioc-container-overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lessons/lessons.iml" filepath="$PROJECT_DIR$/lessons/lessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/thinking-in-spring.iml" filepath="$PROJECT_DIR$/.idea/thinking-in-spring.iml" />
     </modules>

@@ -8,7 +8,7 @@
 
 ### 3. [Spring IoC 容器概述](SpringIOCIntroduction.md)
 
-Spring Bean 基础
+### 4. [Spring Bean 基础](springBeanBase.md)
 
 Spring 依赖查找
 

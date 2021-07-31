@@ -20,6 +20,9 @@ package com.spring.ioc.domain;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 /**
  * 用户类
  * @author shanbin
@@ -39,4 +42,21 @@ public class User {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public User() {
+    }
+
+    public User(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public static User createUser() {
+        User user = new User();
+        user.setId(100L);
+        user.setName("static-method-user");
+        return user;
+    }
+
+
 }

@@ -9,12 +9,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ioc-container-overview" />
+        <module name="spring-bean" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ioc" target="1.8" />
       <module name="ioc-container-overview" target="1.8" />
       <module name="lessons" target="1.8" />
+      <module name="spring-bean" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

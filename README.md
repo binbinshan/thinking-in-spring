@@ -10,7 +10,7 @@
 
 ### 4. [Spring Bean 基础](springBeanBase.md)
 
-Spring 依赖查找
+### 5. [Spring 依赖查找](dependencyInjection.md)
 
 Spring 依赖注入
 
@@ -43,4 +43,6 @@ Spring Environment 抽象
 Spring 应用上下文生命周期
 
 
+> 每节课的面试点
 
+### [Spring面试点](SpringInterview.md)

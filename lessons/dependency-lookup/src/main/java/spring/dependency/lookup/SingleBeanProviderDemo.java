@@ -42,7 +42,6 @@ public class SingleBeanProviderDemo {
 
     private static void lookupByStreamOps(AnnotationConfigApplicationContext applicationContext) {
         ObjectProvider<String> objectProvider = applicationContext.getBeanProvider(String.class);
-        // Stream -> Method reference
         objectProvider.stream().forEach(System.out::println);
     }
 

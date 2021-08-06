@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lessons/dependency-injection/dependency-injection.iml" filepath="$PROJECT_DIR$/lessons/dependency-injection/dependency-injection.iml" />
       <module fileurl="file://$PROJECT_DIR$/lessons/dependency-lookup/dependency-lookup.iml" filepath="$PROJECT_DIR$/lessons/dependency-lookup/dependency-lookup.iml" />
       <module fileurl="file://$PROJECT_DIR$/lessons/ioc-container-overview/ioc-container-overview.iml" filepath="$PROJECT_DIR$/lessons/ioc-container-overview/ioc-container-overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lessons/lessons.iml" filepath="$PROJECT_DIR$/lessons/lessons.iml" />

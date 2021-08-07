@@ -17,11 +17,13 @@
 package com.spring.ioc.domain;
 
 
+import com.spring.ioc.enums.City;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.core.io.Resource;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 用户类
@@ -35,11 +37,26 @@ public class User {
 
     private String name;
 
+    private Resource localResource;
+
+    private City city;
+
+    private City[] birthCity;
+
+    private List<City> lifeCity;
+
+    private List<City> workCity;
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", localResource=" + localResource +
+                ", city=" + city +
+                ", birthCity=" + Arrays.toString(birthCity) +
+                ", lifeCity=" + lifeCity +
+                ", workCity=" + workCity +
                 '}';
     }
 

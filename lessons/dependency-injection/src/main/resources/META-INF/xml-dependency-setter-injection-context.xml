@@ -15,6 +15,16 @@
     <bean id="user" class="com.spring.ioc.domain.User">
         <property name="id" value="1"/>
         <property name="name" value="binbinshan"/>
+        <property name="city" value="BEIJING"/>
+        <property name="localResource" value="classpath:META-INF/user-config.properties"/>
+        <property name="birthCity" value="BEIJING"/>
+        <property name="lifeCity" value="BEIJING,SHANGHAI"/>
+        <property name="workCity">
+            <list>
+                <value>SHANGHAI</value>
+                <value>GUANGZHOU</value>
+            </list>
+        </property>
     </bean>
 
 </beans>

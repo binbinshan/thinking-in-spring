@@ -13,12 +13,9 @@
 ### 5. [Spring 依赖查找](dependencyLookup.md)
 
 ### 6. [Spring 依赖注入](dependencyInjection.md)
-
-#### 1. [@Autowired 注入原理](dependencyInjection1.md)
-
-#### 2. [Java通用注解注入原理](dependencyInjection2.md)
-
-#### 3. [自定义依赖注入注解](dependencyInjection3.md)
+* [1.Spring 依赖注入扩展 - @Autowired 注入原理](dependencyInjection1.md)
+* [2.Spring 依赖注入扩展 - Java通用注解注入原理](dependencyInjection2.md)
+* [3.Spring 依赖注入扩展 - 自定义依赖注入注解](dependencyInjection3.md)
 
 Spring IoC依赖来源
 

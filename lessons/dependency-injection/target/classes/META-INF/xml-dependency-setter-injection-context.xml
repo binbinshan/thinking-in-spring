@@ -27,4 +27,8 @@
         </property>
     </bean>
 
+    <bean id="superUser" class="com.spring.ioc.domain.SuperUser" parent="user" primary="true">
+        <property name="id" value="2"/>
+        <property name="address" value="address"/>
+    </bean>
 </beans>

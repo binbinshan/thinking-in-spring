@@ -9,6 +9,8 @@
     - [7.什么是 Spring BeanDefinition？](#7什么是-spring-beandefinition)
     - [8. 如何构建BeanDefinition？](#8-如何构建beandefinition)
     - [9.如何注册一个 Spring Bean？](#9如何注册一个-spring-bean)
+    - [10.有多少种依赖注入的方式？](#10有多少种依赖注入的方式)
+    - [11.构造器注入还是 Setter 注入？](#11构造器注入还是-setter-注入)
 
 
 ### 1.什么是 Spring Framework？
@@ -61,7 +63,19 @@ BeanDefinition中包括Bean的一些元信息：如 Bean 名称、作用域、�
 1. 通过 BeanDefinitionBuilder 构建
 2. 通过 AbstractBeanDefinition 以及派生类
 
+------ 
 
 ### 9.如何注册一个 Spring Bean？
 通过 BeanDefinition 进行注册。
+
+
+------ 
+
+### 10.有多少种依赖注入的方式？
+
+构造器注入 、Setter注入 、字段注入、方法注入、接口回调注入
+
+### 11.构造器注入还是 Setter 注入？
+
+两种依赖注入的方式均可使用，如果是必须依赖的话，那么推荐使用构 造器注入，Setter 注入用于可选依赖。
 

@@ -129,8 +129,7 @@ beanFactory.registerResolvableDependency(ApplicationContext.class, this);
 
 DefaultListableBeanFactory#registerBeanDefinition 相关源码大致流程：
 
-![]((https://github.com/binbinshan/thinking-in-spring/blob/master/images/16285786557137.jpg)
-
+<div align="center"> <img src="https://github.com/binbinshan/thinking-in-spring/blob/master/images/16285786557137.jpg" width="1200px"> </div><br>
 
 ## 內建 Spring BeanDefintion 作为依赖来源
 

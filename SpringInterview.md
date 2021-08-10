@@ -11,6 +11,9 @@
     - [9.如何注册一个 Spring Bean？](#9如何注册一个-spring-bean)
     - [10.有多少种依赖注入的方式？](#10有多少种依赖注入的方式)
     - [11.构造器注入还是 Setter 注入？](#11构造器注入还是-setter-注入)
+    - [12.注入和查找的依赖来源是否相同？](#12注入和查找的依赖来源是否相同)
+    - [13.单例对象能在 IoC 容器启动后注册吗？](#13单例对象能在-ioc-容器启动后注册吗)
+    - [14.Spring 依赖注入的来源有哪些？](#14spring-依赖注入的来源有哪些)
 
 
 ### 1.什么是 Spring Framework？
@@ -75,7 +78,24 @@ BeanDefinition中包括Bean的一些元信息：如 Bean 名称、作用域、�
 
 构造器注入 、Setter注入 、字段注入、方法注入、接口回调注入
 
+------ 
+
 ### 11.构造器注入还是 Setter 注入？
 
 两种依赖注入的方式均可使用，如果是必须依赖的话，那么推荐使用构 造器注入，Setter 注入用于可选依赖。
 
+------ 
+
+### 12.注入和查找的依赖来源是否相同？
+
+否，依赖查找的来源仅限于 Spring BeanDefinition 以及单例对象，而依赖注入的来源还包括 Resolvable Dependency 以及 @Value 所标注的外部化配置。
+
+------ 
+
+### 13.单例对象能在 IoC 容器启动后注册吗？
+可以的，单例对象的注册与 BeanDefinition 不同，BeanDefinition 会被 ConfigurableListableBeanFactory#freezeConfiguration() 方法影响， 从而冻结注册，单例对象则没有这个限制。
+
+------ 
+
+### 14.Spring 依赖注入的来源有哪些？
+Spring BeanDefinition 、单例对象 、 ResolvableDependency 、@Value 外部化配置

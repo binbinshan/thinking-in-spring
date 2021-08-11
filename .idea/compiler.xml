@@ -12,6 +12,7 @@
         <module name="dependency-injection" />
         <module name="ioc-container-overview" />
         <module name="dependency-lookup" />
+        <module name="spring-bean-scope" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="ioc-container-overview" target="1.8" />
       <module name="lessons" target="1.8" />
       <module name="spring-bean" target="1.8" />
+      <module name="spring-bean-scope" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

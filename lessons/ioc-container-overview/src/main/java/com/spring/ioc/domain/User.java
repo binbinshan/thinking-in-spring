@@ -20,8 +20,11 @@ package com.spring.ioc.domain;
 import com.spring.ioc.enums.City;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.core.io.Resource;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,7 +34,25 @@ import java.util.List;
  */
 @Getter
 @Setter
-public class User {
+public class User implements BeanNameAware {
+
+    private String beanName;
+
+    @PostConstruct
+    public void init() {
+        System.out.println(beanName + "用户对象初始化...");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println(beanName + "用户对象销毁...");
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        this.beanName = name;
+    }
+
 
     private Long id;
 
@@ -74,6 +95,7 @@ public class User {
         user.setName("static-method-user");
         return user;
     }
+
 
 
 }

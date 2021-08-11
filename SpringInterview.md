@@ -14,6 +14,9 @@
     - [12.注入和查找的依赖来源是否相同？](#12注入和查找的依赖来源是否相同)
     - [13.单例对象能在 IoC 容器启动后注册吗？](#13单例对象能在-ioc-容器启动后注册吗)
     - [14.Spring 依赖注入的来源有哪些？](#14spring-依赖注入的来源有哪些)
+    - [15.Spring 內建的 Bean 作用域有几种？](#15spring-內建的-bean-作用域有几种)
+    - [16.singleton Bean 是否在一个应用是唯一的？](#16singleton-bean-是否在一个应用是唯一的)
+    - [17.作用域 “application”Bean 是否被其他方案替代](#17作用域-applicationbean-是否被其他方案替代)
 
 
 ### 1.什么是 Spring Framework？
@@ -99,3 +102,19 @@ BeanDefinition中包括Bean的一些元信息：如 Bean 名称、作用域、�
 
 ### 14.Spring 依赖注入的来源有哪些？
 Spring BeanDefinition 、单例对象 、 ResolvableDependency 、@Value 外部化配置
+
+------ 
+
+### 15.Spring 內建的 Bean 作用域有几种？
+singleton、prototype、request、session、application 以及 websocket
+
+------ 
+
+### 16.singleton Bean 是否在一个应用是唯一的？
+否，singleton bean 仅在当前 Spring IoC 容器（BeanFactory）中是 单例对象。
+
+------ 
+
+### 17.作用域 “application”Bean 是否被其他方案替代
+可以的，实际上，“application” Bean 与“singleton” Bean 没有 本质区别
+

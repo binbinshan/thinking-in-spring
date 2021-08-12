@@ -27,7 +27,7 @@ request、session、application 主要用于页面渲染，比如 JSP、Velocity
 
 ## Singleton作用域
 
-![](media/16286428297145/16286431728018.jpg)
+![](https://github.com/binbinshan/thinking-in-spring/blob/master/images/16286431728018.jpg)
 
 1. 从上面的图可以看到，三个 bean 配置都不同，但是 ref="accountDao"，都指向同一个 bean，每次进行属性的注入，都是同一个共享实例。
 
@@ -52,7 +52,7 @@ singleton 和 prototype 不能简单的说是互斥的关系，因为从接口�
 
 ## prototype作用域
 
-![](media/16286428297145/16286459402313.jpg)
+![](https://github.com/binbinshan/thinking-in-spring/blob/master/images/16286459402313.jpg)
 
 每次进行属性注入都会产生一个新的实例，以依赖查找和依赖注入两个示例说明：
 

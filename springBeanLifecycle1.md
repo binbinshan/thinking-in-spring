@@ -1,26 +1,26 @@
 # Spring Bean 生命周期(一)
 
 - [Spring Bean 生命周期(一)](#spring-bean-生命周期一)
-  - [Bean生命周期-总览](#bean生命周期-总览)
-  - [Spring Bean 元信息配置阶段](#spring-bean-元信息配置阶段)
-    - [面向资源中的xml配置](#面向资源中的xml配置)
-    - [面向资源中的properties配置](#面向资源中的properties配置)
-    - [面向注解](#面向注解)
-    - [面向API](#面向api)
-  - [Spring Bean 元信息解析阶段](#spring-bean-元信息解析阶段)
-    - [面向资源的BeanDefinition解析](#面向资源的beandefinition解析)
-    - [面向注解的BeanDefinition解析](#面向注解的beandefinition解析)
-  - [Spring Bean 注册阶段](#spring-bean-注册阶段)
-  - [Spring BeanDefinition 合并阶段](#spring-beandefinition-合并阶段)
-  - [Spring Bean Class 加载阶段](#spring-bean-class-加载阶段)
-  - [参考](#参考)
+	- [Bean生命周期-总览](#bean生命周期-总览)
+	- [Spring Bean 元信息配置阶段](#spring-bean-元信息配置阶段)
+		- [面向资源中的xml配置](#面向资源中的xml配置)
+		- [面向资源中的properties配置](#面向资源中的properties配置)
+		- [面向注解](#面向注解)
+		- [面向API](#面向api)
+	- [Spring Bean 元信息解析阶段](#spring-bean-元信息解析阶段)
+		- [面向资源的BeanDefinition解析](#面向资源的beandefinition解析)
+		- [面向注解的BeanDefinition解析](#面向注解的beandefinition解析)
+	- [Spring Bean 注册阶段](#spring-bean-注册阶段)
+	- [Spring BeanDefinition 合并阶段](#spring-beandefinition-合并阶段)
+	- [Spring Bean Class 加载阶段](#spring-bean-class-加载阶段)
+	- [参考](#参考)
 
 ## Bean生命周期-总览
 Spring Bean的生命周期这里一共细分为 18 个阶段，从 Bean 的配置阶段到最终的销毁阶段，还特别加入了垃圾回收。
 
 以下图为例，展示了Bean的一个全流程生命周期：
 
-![Spring bean生命周期全流程图](media/16286845390039/16287474683179.jpg)
+![Spring bean生命周期全流程图](https://github.com/binbinshan/thinking-in-spring/blob/master/images/16287474683179.jpg)
 
 
 因本章内容量过大，因此分为三节来进行讨论：

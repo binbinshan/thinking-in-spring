@@ -10,12 +10,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-bean" />
         <module name="dependency-injection" />
+        <module name="bean-lifecycle" />
         <module name="ioc-container-overview" />
         <module name="dependency-lookup" />
         <module name="spring-bean-scope" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bean-lifecycle" target="1.8" />
       <module name="dependency-injection" target="1.8" />
       <module name="dependency-lookup" target="1.8" />
       <module name="ioc" target="1.8" />

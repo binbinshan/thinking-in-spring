@@ -16,6 +16,7 @@
         <module>dependency-lookup</module>
         <module>dependency-injection</module>
         <module>spring-bean-scope</module>
+        <module>bean-lifecycle</module>
     </modules>
 
 

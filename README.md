@@ -16,9 +16,13 @@
 
 ### 7. [Spring IoC依赖来源](dependencyInjectionSource.md)
 
-Spring Bean作用域
+### 8. [Spring Bean作用域](springBeanScope.md)
 
-Spring Bean生命周期
+### 9.1 [Spring Bean生命周期 一](springBeanLifecycle1.md)
+
+### 9.2 [Spring Bean生命周期 二]
+
+### 9.3 [Spring Bean生命周期 三]
 
 Spring 配置元信息
 

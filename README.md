@@ -20,7 +20,7 @@
 
 ### 9.1 [Spring Bean生命周期 一](springBeanLifecycle1.md)
 
-### 9.2 [Spring Bean生命周期 二]
+### 9.2 [Spring Bean生命周期 二](springBeanLifecycle2.md)
 
 ### 9.3 [Spring Bean生命周期 三]
 

@@ -13,8 +13,13 @@
         <property name="name" value="binbinshan"/>
     </bean>
 
-    <bean id="super" class="com.spring.ioc.domain.SuperUser" parent="user" primary="true">
-        <property name="address" value="beijing"/>
+    <bean id="superUser" class="com.spring.ioc.domain.SuperUser" parent="user" primary="true">
+        <property name="address" value="SHANGHAI"/>
+    </bean>
+
+    <bean id="userHolder" class="com.spring.ioc.domain.UserHolder"
+          autowire="constructor">
+        <property name="description" value="The user holder" />
     </bean>
 
 </beans>

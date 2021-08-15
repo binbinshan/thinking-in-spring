@@ -18,7 +18,7 @@
     </bean>
 
     <bean id="userHolder" class="com.spring.ioc.domain.UserHolder"
-          autowire="constructor">
+          autowire="constructor" init-method="customInit" destroy-method="customDestroy">
         <property name="description" value="The user holder" />
     </bean>
 

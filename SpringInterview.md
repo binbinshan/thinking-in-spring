@@ -17,6 +17,9 @@
     - [15.Spring 內建的 Bean 作用域有几种？](#15spring-內建的-bean-作用域有几种)
     - [16.singleton Bean 是否在一个应用是唯一的？](#16singleton-bean-是否在一个应用是唯一的)
     - [17.作用域 “application”Bean 是否被其他方案替代](#17作用域-applicationbean-是否被其他方案替代)
+    - [18.BeanPostProcessor 的使用场景有哪些？](#18beanpostprocessor-的使用场景有哪些)
+    - [19.BeanFactoryPostProcessor 与 BeanPostProcessor 的区别？](#19beanfactorypostprocessor-与-beanpostprocessor-的区别)
+    - [20.BeanFactory 是怎样处理 Bean 生命周期？](#20beanfactory-是怎样处理-bean-生命周期)
 
 
 ### 1.什么是 Spring Framework？
@@ -118,3 +121,54 @@ singleton、prototype、request、session、application 以及 websocket
 ### 17.作用域 “application”Bean 是否被其他方案替代
 可以的，实际上，“application” Bean 与“singleton” Bean 没有 本质区别
 
+
+------ 
+
+### 18.BeanPostProcessor 的使用场景有哪些？
+BeanPostProcessor 提供 Spring Bean 初始化前和初始化后的生命周期回调，分别对应 postProcessBeforelnitialization 以及 pistProcessAfterInitialization 方法，允许对相关的 Bean 进行扩展，甚至是替换。
+
+BeanPostProcessor 的子类 DestructionAwareBeanPostProcessor 提供销毁前的生命周期回调。
+BeanPostProcessor 的子类 InstantiationAwareBeanPostProcessor 提供实例化前postProcessBeforeInstantiation，实例化后 postProcessAfterInstantiation，属性赋值前 postProcessProperties 的生命周期回调。
+
+ ApplicationContext 相关的 Aware 回调也是基于 BeanPostProcessor 实现，即 ApplicationContextAwareProcessor
+
+------ 
+
+### 19.BeanFactoryPostProcessor 与 BeanPostProcessor 的区别？
+两者无法进行对比，BeanFactoryPostProcessor 是 Spring BeanFactory（实际是ConfigurableListableBeanFactory）的后置处理器，用于扩展 BeanFactory，或者通过 BeanFactory 进行依赖查找和依赖注入。
+而 BeanPostProcessor 则是直接与 BeanFactory 关联，属于 N 对 1 的关系。
+
+BeanFactoryPostProcessor 必须有 Spring ApplicationContext 执行，BeanFactory 无法直接与其交互。
+
+------ 
+
+### 20.BeanFactory 是怎样处理 Bean 生命周期？
+BeanFactory 的默认实现为 DefaultListableBeanFactory ,其中 Bean 生命周期与方法映射如下：
+
+BeanDefinition 注册阶段 - registerBeanDefinition
+
+BeanDefinition 合并阶段 - getMergedBeanDefinition
+
+Bean 实例化前阶段 - resolveBeforeInstantiation
+
+Bean 实例化阶段 - createBeanInstance
+
+Bean 实例化后阶段 - populateBean
+
+Bean 属性赋值前阶段 - populateBean
+
+Bean 属性赋值阶段 - populateBean
+
+Bean Aware 接口回调阶段 - initializeBean
+
+Bean 初始化前阶段 - initializeBean
+
+Bean 初始化阶段 - initializeBean
+
+Bean 初始化后阶段 - initializeBean
+
+Bean 初始化完成阶段 - preInstantiateSingletons
+
+Bean 销毁前阶段 - destroyBean
+
+Bean 销毁阶段 - destroyBean
